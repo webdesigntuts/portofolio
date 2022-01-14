@@ -1,0 +1,21 @@
+.resume {
+    display: flex;
+    gap: 2rem;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        gap: 4rem;
+    }
+}
+
+.path,
+.skills {
+    width: 100%;
+}
+
+.experience {
+    margin-top: 4rem;
+}
+
+.programmingSkills {
+    margin-top: 4rem;
+}

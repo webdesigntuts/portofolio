@@ -1,0 +1,64 @@
+.sliderContent {
+    position: relative;
+    border: 2px solid var(--darkGray);
+    padding: 1.2rem;
+    padding-top: 1.5rem;
+    margin: 2rem 1rem;
+    margin-bottom: 0;
+    margin-left: 2px;
+    border-radius: 30px;
+    cursor: pointer;
+
+    .person {
+        --image-size: 4rem;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        width: var(--image-size);
+        height: var(--image-size);
+        border: 2px solid var(--darkGray);
+        overflow: hidden;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    p {
+        color: var(--text-color);
+        font-size: 0.9rem;
+        margin: 0.8rem 0;
+    }
+
+    .quote {
+        display: flex;
+        gap: 1rem;
+        .name {
+            & h4:first-child {
+                color: var(--white);
+                font-size: 0.8rem;
+                font-weight: 400;
+                white-space: nowrap;
+            }
+            & h4:nth-child(2) {
+                color: var(--gray);
+                font-size: 0.8rem;
+                font-weight: 400;
+                white-space: nowrap;
+            }
+        }
+
+        .iconContainer {
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            .icon {
+                font-size: 2rem;
+                color: var(--darkBlue);
+            }
+        }
+    }
+}

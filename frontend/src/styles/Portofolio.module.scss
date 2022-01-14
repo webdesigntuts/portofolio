@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    .imageContainer {
+        max-width: 600px;
+        max-height: 500px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        img {
+            width: 100%;
+        }
+    }
+    p {
+        color: var(--white);
+    }
+    margin-bottom: 2rem;
+}

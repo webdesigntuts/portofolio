@@ -1,0 +1,19 @@
+@use "breakpoints";
+@use "mixins";
+.container {
+    user-select: none;
+    height: 100vh;
+    overflow-y: scroll;
+    @include mixins.hideScrollbar;
+    @media screen and (max-width: breakpoints.$laptop) {
+        display: none;
+    }
+}
+
+.nav {
+    ul {
+        li:first-child {
+            margin-top: 0.8rem;
+        }
+    }
+}

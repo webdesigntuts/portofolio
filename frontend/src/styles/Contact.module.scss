@@ -1,0 +1,136 @@
+.contactContent {
+    display: flex;
+    @media screen and (max-width: 640px) {
+        flex-direction: column;
+    }
+}
+
+.contactInfo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+    @media screen and (max-width: 640px) {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+    .card {
+        border: 1px solid rgb(75, 75, 75);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 1rem;
+        background: rgb(51, 51, 51);
+
+        @media screen and (max-width: 640px) {
+            padding: 2rem 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        svg {
+            color: var(--blue);
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        span {
+            color: var(--white);
+            font-size: 1rem;
+            text-align: center;
+        }
+    }
+}
+
+.contactForm {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .formName,
+    .formEmail,
+    .formSubject,
+    .formMessage {
+        position: relative;
+        margin-bottom: 2rem;
+        &:focus-within label {
+            top: 0;
+            transform: translate(-50%, -100%);
+            color: var(--blue);
+            font-size: 0.8rem;
+        }
+        &:hover label {
+            opacity: 0.7;
+        }
+
+        label {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: transform 0.3s ease-in-out;
+            color: var(--text-color);
+            font-size: 1rem;
+            transition: all ease-in-out 0.3s;
+        }
+
+        .labelSm {
+            top: 0;
+            transform: translate(-50%, -100%);
+            color: var(--blue);
+            font-size: 0.8rem;
+        }
+
+        input,
+        textarea {
+            padding: 0.5rem 0.8rem;
+            width: 100%;
+            outline: none;
+            background: transparent;
+            border: 2px solid var(--text-color);
+            border-radius: 3px;
+            color: var(--text-color);
+            font-size: 1rem;
+            resize: none;
+            transition: border-color 0.3s ease-in-out;
+
+            &:hover,
+            &:focus {
+                border-color: var(--blue);
+            }
+        }
+    }
+
+    .submit {
+        display: flex;
+        align-self: center;
+        margin-bottom: 0;
+
+        input {
+            padding: 0.6rem 0.8rem;
+            width: 100%;
+            outline: none;
+            background: transparent;
+            color: var(--text-color);
+            font-size: 1rem;
+            border-color: var(--blue);
+            border-radius: 20px;
+            box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.247);
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                transform: scale(1.05);
+                background: var(--blue);
+                border-color: transparent;
+                color: #333;
+            }
+        }
+    }
+}

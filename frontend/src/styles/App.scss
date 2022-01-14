@@ -1,0 +1,73 @@
+@use "breakpoints";
+@use "mixins";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+  list-style: none;
+  text-decoration: none;
+}
+
+html,
+body {
+  overflow: hidden;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  background: var(--black);
+}
+
+.App {
+  display: flex;
+  overflow: hidden;
+  height: 100vh;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--black);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: var(--gray);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--darkGray);
+}
+
+:root {
+  /* FIREFOX SCROLLBAR */
+  scrollbar-width: thin !important;
+  scrollbar-color: var(--gray) var(--black) !important;
+
+  --gray: rgb(160, 161, 162);
+  --darkGray: rgb(68, 68, 68);
+  --black: rgb(34, 34, 34);
+
+  --blue: rgb(5, 176, 219);
+  --darkBlue: rgb(19, 107, 129);
+
+  --white: rgb(238, 238, 238);
+  --text-color: rgb(213, 213, 213);
+}
+
+@media screen and (max-width: breakpoints.$laptop) {
+  ::-webkit-scrollbar {
+    width: 0.4em;
+  }
+
+  #root {
+    position: relative;
+  }
+}

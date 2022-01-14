@@ -1,0 +1,35 @@
+.barContainer {
+    margin-bottom: 0.8rem;
+    .barTitle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.5rem;
+        h4 {
+            color: var(--white);
+            font-size: 0.8rem;
+        }
+        h5 {
+            color: var(--gray);
+            font-size: 0.6rem;
+        }
+    }
+
+    .bar {
+        width: 100%;
+        height: 0.7rem;
+        border-radius: 100px;
+        border: 2px solid var(--blue);
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .barPercentage {
+            width: 95%;
+            height: 45%;
+            margin: 0 2px;
+            border-radius: 100px;
+            background: var(--darkBlue);
+        }
+    }
+}

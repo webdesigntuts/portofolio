@@ -1,0 +1,147 @@
+//ALL SECTIONS
+section {
+    margin-bottom: 4rem;
+    &:first-child {
+        margin-bottom: 1rem;
+    }
+    &:last-child {
+        margin-bottom: 1rem;
+    }
+}
+//--------------------------------
+
+.section1 {
+    .info {
+        display: flex;
+        color: var(--text-color);
+
+        p {
+            font-size: 1rem;
+            width: 100%;
+            font-weight: 400;
+            margin-right: 2rem;
+        }
+    }
+
+    .moreInfo {
+        width: 100%;
+
+        li {
+            margin-bottom: 0.8rem;
+            span {
+                color: var(--white);
+                margin-right: 0.6rem;
+            }
+
+            & span:first-child {
+                color: var(--blue);
+                font-weight: 600;
+            }
+        }
+    }
+
+    @media screen and (max-width: 660px) {
+        .info {
+            flex-direction: column;
+            p {
+                margin-bottom: 2rem;
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.moreInfoContainer {
+    display: flex;
+
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+}
+
+.moreInfoContainerLeft {
+    margin-right: 1.4rem;
+    @media screen and (max-width: 600px) {
+        margin: 0;
+    }
+    & .info:nth-child(1) {
+        margin-bottom: 1rem;
+    }
+}
+
+.moreInfoContainerRight {
+    & .info:nth-child(1) {
+        margin-bottom: 1rem;
+    }
+}
+
+.info {
+    .icon {
+        color: var(--darkBlue);
+        font-size: 2rem;
+        margin-bottom: 4px;
+    }
+    h4 {
+        margin: 0;
+        margin-bottom: 0.6rem;
+        color: var(--white);
+        font-size: 1.3rem;
+    }
+    .description {
+        color: var(--text-color);
+        font-size: 0.9rem;
+    }
+}
+
+.section4 {
+    .brandContainer {
+        margin-top: 1rem;
+        width: 100%;
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        img {
+            width: 7.2rem;
+        }
+    }
+}
+
+.section5 {
+    .factsContainer {
+        display: flex;
+        gap: 2rem;
+        @media screen and (max-width: 600px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .factContainer {
+            width: 100%;
+            text-align: center;
+            border: 2px solid var(--darkGray);
+            padding: 0.8rem 0;
+            border-radius: 30px;
+
+            .icon {
+                color: var(--blue);
+                font-size: 1.4rem;
+            }
+
+            h2 {
+                font-size: 1.2rem;
+                color: var(--white);
+            }
+
+            h3 {
+                font-size: 1.6rem;
+                color: var(--white);
+                margin-bottom: 0;
+                margin-top: 1rem;
+            }
+        }
+    }
+}
