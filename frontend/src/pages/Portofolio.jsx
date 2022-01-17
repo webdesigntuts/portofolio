@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import PageContainer from "../components/PageContainer";
 import { BigTitle, SmallTitle } from "../components/Titles";
 import { GETPORTOFOLIO } from "../queries/portofolioQueries";
-
 import styles from "../styles/Portofolio.module.scss";
 const Portofolio = () => {
   let params = useParams();
