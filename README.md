@@ -1,5 +1,5 @@
 # Personal / Portofolio Website
-Video Part_1: ----\
+Video Part_1: https://youtu.be/-HtzhZXG-_c \
 Video Part_2: Will Upload Soon \
 You Have to create blogs/portofolios in strapi by yourself. I created the content types for you. \
 If you don't start the strapi backend , The blog and the Portofolio page will return "loading..."  but everything else will work as intended\
