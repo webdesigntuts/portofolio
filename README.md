@@ -1,5 +1,5 @@
-# RealEstateAppFull
-Video Part_1: https://youtu.be/CQeV-i6Dp84 \
+# Personal / Portofolio Website
+Video Part_1: ----\
 Video Part_2: Will Upload Soon \
 You Have to create blogs/portofolios in strapi by yourself. I created the content types for you. \
 If you don't start the strapi backend , The blog and the Portofolio page will return <h1>loading<h1> forever.You can delete My implementation and implement your own Pages.
