@@ -1,8 +1,9 @@
 # Personal / Portofolio Website
 Video Part_1: ----\
 Video Part_2: Will Upload Soon \
-You Have to create blogs/portofolios in strapi by yourself. I created the content types for you. 
-If you don't start the strapi backend , The blog and the Portofolio page will return <h1>loading<h1> forever.You can delete My implementation and implement your own Pages.
+You Have to create blogs/portofolios in strapi by yourself. I created the content types for you. \
+If you don't start the strapi backend , The blog and the Portofolio page will return "loading..."  but everything else will work as intended\
+You can delete my implementation on those pages and implement your own Pages.
 
 ## Install Node Modules
 cd frontend\
@@ -14,7 +15,7 @@ npm install
 Go to frontend folder and type "npm run start" for the react-app\
 Then go to the backend folder and type "npm run develop" for the strapi backend
 
-## Available Scripts (frontend)
+## Available Scripts (React frontend)
 In the project directory, you can run:
 
 ### `npm start`
@@ -29,7 +30,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.\
 
-## Available Scripts (backend)
+## Available Scripts (Strapi backend)
 ### `npm run strapi develop`
 Open http://localhost:1337 to view it in your browser.\
 ### `npm run strapi start`
