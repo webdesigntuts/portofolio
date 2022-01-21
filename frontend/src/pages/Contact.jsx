@@ -77,7 +77,10 @@ const Contact = () => {
         </motion.div>
 
         {/* FORM */}
-        <form className={styles.contactForm}>
+        <form
+          className={styles.contactForm}
+          onSubmit={(e) => e.preventDefault()}
+        >
           <SmallTitle>Form :</SmallTitle>
           {/* INPUT NAME*/}
           <div className={styles.formName}>
