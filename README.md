@@ -9,13 +9,13 @@ You can delete my implementation on those pages and implement your own Pages.
 cd frontend\
 npm install\
 cd backend\
-npm install\
+npm install
 
 
 ## Run The app As I did on Youtube
 Go to frontend folder and type "npm run start" for the react-app\
 Then go to the backend folder and type "npm run develop" for the strapi backend\
-STRAPI EMAIL/PASSWORD : test@test.com / Test12345 (http://localhost:1337)\
+STRAPI EMAIL/PASSWORD : test@test.com / Test12345 (http://localhost:1337) 
 
 ## Available Scripts (React frontend)
 In the project directory, you can run:
