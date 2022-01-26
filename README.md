@@ -9,7 +9,8 @@ You can delete my implementation on those pages and implement your own Pages.
 cd frontend\
 npm install\
 cd backend\
-npm install
+npm install\
+STRAPI EMAIL/PASSWORD : test@test.com / Test12345\
 
 ## Run The app As I did on Youtube
 Go to frontend folder and type "npm run start" for the react-app\
